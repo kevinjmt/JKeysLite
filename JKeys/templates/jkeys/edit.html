@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    # Load Static Folder to load images and CSSs
+    <!-- Load Static Folder to load images and CSSs -->
     {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    # Display object name in the website tab with a pen
-    # to show to the user that he is editing this object
-    # Object accessible from detail view
+    <!-- Display object name in the website tab with a pen
+         to show to the user that he is editing this object
+         Object accessible from detail view -->
     <title>JKeys - ✏️ {{ object.name }}</title>
 
-    # Load images and CSSs using the static folder (for resources)
+    <!-- Load images and CSSs using the static folder (for resources) -->
     <link rel="shortcut icon" type="image/png" href="{% static 'jkeys/jkey.png' %}"/>
     <link rel="stylesheet" href="{% static 'jkeys/edit.css' %}">
     
@@ -21,16 +21,16 @@
 <body>
     <div class="logingrid">`
 
-        # SAME AS CREATE
+        <!-- SAME AS CREATE -->
 
-        # The 'form' is indexing each field of text input into the django
-        # classes to send it to the database (POST method)
-        # Here, each field has been created manually to add custom CSS
+        <!-- The 'form' is indexing each field of text input into the django
+             classes to send it to the database (POST method)
+             Here, each field has been created manually to add custom CSS -->
         <form method="POST" id="editElement" name="editElement" class="editElement" enctype="multipart/form-data">
 
-            # csrf_token is an element to show to the django library that
-            # the form is beginning here (to change fields and then, update them
-            # in the database)
+            <!-- csrf_token is an element to show to the django library that
+                the form is beginning here (to change fields and then, update them
+                in the database) -->
             {% csrf_token %}
             <div class="logincontainer">
                 <img src="{% static 'jkeys/jkey.png' %}" height="100px"/>
@@ -39,8 +39,8 @@
                 <div class="idrow">
                     <h2>Name:</h2>
 
-                    # The text input field is here to show to the user the current
-                    # object attribute 'name' to update.
+                    <!-- The text input field is here to show to the user the current
+                            object attribute 'name' to update. -->
                     <input  type="text" value="{{ object.name }}" class="login" name="name" required
                minlength="4" maxlength="150" placeholder="Name">
                 </div>
@@ -48,8 +48,8 @@
                 <div class="idrow">
                     <h2>Email:</h2>
 
-                    # The text input field is here to show to the user the current
-                    # object attribute 'mail' to update.
+                    <!-- The text input field is here to show to the user the current
+                         object attribute 'mail' to update. -->
                     <input type="text" value="{{ object.mail }}" class="login" name="mail" required
                minlength="4" maxlength="150" placeholder="Email">
                 </div>
@@ -57,8 +57,8 @@
                 <div class="idrow">
                     <h2>Password:</h2>
 
-                    # The text input field is here to show to the user the current
-                    # object attribute 'password' to update.
+                    <!-- The text input field is here to show to the user the current
+                         object attribute 'password' to update. -->
                     <input type="text" value="{{ object.password }}" class="login" name="password" required
                minlength="4" maxlength="150" placeholder="Password">
                 </div>
@@ -68,17 +68,17 @@
                     <h2>Link:</h2>
 
 
-                    # The text input field is here to show to the user the current
-                    # object attribute 'link' to update.
+                    <!-- The text input field is here to show to the user the current
+                        object attribute 'link' to update. -->
                     <input type="text" value="{{ object.link }}" class="login" name="link" required
                minlength="4" maxlength="150" placeholder="Website Link">
                 </div>
 
                 <div style="flex-direction: row;">
 
-                    # Button to submit the results fields in the text inputs
-                    # to send it to the django library and then to the database.
-                    # That's why type -> submit
+                    <!-- Button to submit the results fields in the text inputs
+                        to send it to the django library and then to the database.
+                        That's why type -> submit -->
                     <button type="submit" class="editbutton" style="margin-top: 100px;
                     font-family: 'Montserrat', sans-serif; color: forestgreen">Save</button>
                 </div>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    # Load Static Folder to load images and CSSs
+    <!-- Load Static Folder to load images and CSSs -->
     {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    # Display object name in the website tab
-    # Object accessible from detail view
+    <!-- Display object name in the website tab
+         Object accessible from detail view -->
     <title>JKeys - {{ object.name }}</title>
 
-    # Load images and CSSs using the static folder (for resources)
+    <!-- Load images and CSSs using the static folder (for resources) -->
     <link rel="shortcut icon" type="image/png" href="{% static 'jkeys/jkey.png' %}"/>
     <link rel="stylesheet" href="{% static 'jkeys/element.css' %}">
 
@@ -27,59 +27,59 @@
 
             <div class="idrow">
                 <h2>Name:</h2>
-                # Display object name in the name field
-                # Object accessible from detail view
+                <!-- Display object name in the name field
+                     Object accessible from detail view -->
                 <h2 class="ids">{{ object.name }}</h2>
             </div>
 
             <div class="idrow">
                 <h2>Email:</h2>
-                # Display object mail in the mail field
-                # Object accessible from detail view
+                <!-- Display object mail in the mail field
+                     Object accessible from detail view -->
                 <h2 class="ids">{{ object.mail }}</h2>
             </div>
 
             <div class="idrow">
                 <h2>Password:</h2>
-                # Display object password in the password field
-                # Object accessible from detail view
+                <!-- Display object password in the password field
+                     Object accessible from detail view -->
                 <h2 class="ids">{{ object.password }}</h2>
             </div>
 
 
             <div class="idrow">
                 <h2>Link:</h2>
-                # Display object link in the link field
-                # Object accessible from detail view
+                <!-- Display object link in the link field
+                     Object accessible from detail view -->
                 <a href="{{ object.link }}" target="_blank" class="idsa">{{ object.link }}</a>
             </div>
 
             <div class="idrow">
                 <h3>Created:</h3>
-                # CANNOT BE MODIFIED
-                # Display object creation date in the created field
-                # Object accessible from detail view
+                <!-- CANNOT BE MODIFIED
+                     Display object creation date in the created field
+                     Object accessible from detail view -->
                 <h3 class="ids">{{ object.created }}</h3>
             </div>
 
             <div class="idrow">
                 <h3>Last Modification:</h3>
-                # CANNOT BE MODIFIED - MODIFIED AUTOMATICALLY
-                # Display object modification date in the last modification field
-                # Object accessible from detail view
+                <!-- CANNOT BE MODIFIED - MODIFIED AUTOMATICALLY
+                     Display object modification date in the last modification field
+                     Object accessible from detail view -->
                 <h3 class="ids">{{ object.modified }}</h3>
             </div>
 
             <div style="flex-direction: row;">
-                # Here are URLs redirection buttons to views associated to
-                # editing and deleting
+                <!-- Here are URLs redirection buttons to views associated to
+                     editing and deleting -->
 
-                # Connect to the Updateview of the object
-                # view which is connected to the url called elementedit
+                <!-- Connect to the Updateview of the object
+                     view which is connected to the url called elementedit -->
                 <a href="{% url 'elementedit' object.id %}" class="editbutton" style="margin-top: 100px;">Edit</a>
 
-                # Connect to the Deleteview of the object
-                # view which is connected to the url called elementdelete
+                <!-- Connect to the Deleteview of the object
+                     view which is connected to the url called elementdelete -->
                 <a href="{% url 'elementdelete' object.id %}" class="editbutton" style="margin-top: 100px; color: brown;">Delete</a>
             </div>
         </div>

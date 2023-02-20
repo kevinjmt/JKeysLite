@@ -15,7 +15,31 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import views
 
 urlpatterns = [
+
+    # Link to Home Page (Listview), called "home" in buttons
+    # Pattern : url
+    path('', views.WebSite.as_view(), name="home"),
+
+    # Link to Create Page (Createview), called "createelement" in buttons
+    # Pattern : url/id/create
+    path('create', views.CreateElement.as_view(), name="createelement"),
+
+    # Link to Details Page (Detailsview), called "element" in buttons
+    # Pattern : url/id
+    path('<int:pk>', views.Element.as_view(), name="element"),
+
+    # Link to Edit Page (Updateview), called "elementedit" in buttons
+    # Pattern : url/id/edit
+    path('<int:pk>/edit', views.EditElement.as_view(), name="elementedit"),
+
+    # Link to Delete Page (Deleteview), called "elementdelete" in buttons
+    # Pattern : url/id/delete
+    path('<int:pk>/delete', views.DeleteElement.as_view(), name="elementdelete"),
+
+    # Default admin page
+    # Pattern : url/admin
     path('admin/', admin.site.urls),
 ]

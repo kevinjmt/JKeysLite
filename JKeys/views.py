@@ -7,7 +7,7 @@ from django.shortcuts import render
 class WebSite(generic.ListView):
     # HTML link to file
     template_name = "jkeys/home.html"
-    # objectname in the HTML file
+    # objectname in the HTML file in home page
     context_object_name = "websitelist"
 
     # Function to get all objects in the database and
