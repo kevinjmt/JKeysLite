@@ -1,0 +1,237 @@
+body{    
+    background: linear-gradient(90deg, #ffa60078 ,  #0ea04678 );
+}
+
+.logingrid{
+    box-shadow: 10px 10px 10px rgba(0, 100, 0, 0.5);
+    display: flex;
+    min-height:fit-content;
+    border-radius: 20px;
+    background: whitesmoke;
+}
+
+.logingrid .logincontainer .title{
+    padding-bottom: 10%;
+}
+
+.logingrid form{
+    margin: 0;
+    padding: 0;
+}
+
+.logingrid .logincontainer .title,
+.logingrid .logincontainer a{
+    font-family: 'Montserrat', sans-serif;
+    color: #145a32;
+}
+.logingrid .logincontainer .idrow .login{
+    padding: 0 15px 0 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    font-weight: 200;
+    outline: none !important;
+    border: 4px solid #ffc44f;
+    color: #ffd580;
+}
+.logingrid .logincontainer .idrow .login:hover{
+    transition: 0.5s;
+    background-color: #fdfaf3;
+}
+.logingrid .logincontainer .idrow .login:focus{
+    transition: 0.5s;
+    background-color: #fff6e4;
+    color: #ce8a00;
+}
+
+
+@media (max-width: 574px) {
+    .logingrid{
+        box-shadow: 10px 10px 10px rgba(0, 100, 0, 0.5);
+        margin: 10% 2% 10% 2%;
+        min-height: fit-content;
+        justify-content: left;
+        border-radius: 20px;
+        padding: 10% 10% 10% 10%;
+        background: whitesmoke;
+    }
+    .logingrid .logincontainer{
+        justify-self: left;
+        padding-left: 5%;
+    }
+    a,
+    img,
+    h1{
+        padding: 0 3% 0 3%;
+    }
+    .idrow h2,
+    .idrow h3,
+    .idrow .ids,
+    .idrow .idsa:link,
+    .idrow .idsa:visited,
+    .idrow .idsa:active{
+        text-align: left;
+        padding: 0 0 0 3%;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 50px;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 10px;
+        font-weight: 200;
+    }
+
+    .idrow .ids,
+    .idrow .idsa:link,
+    .idrow .idsa:visited,
+    .idrow .idsa:active{
+        padding: 0 0 0 15%;
+    }
+    .logingrid .logincontainer .idrow .login{
+        width: 80%;
+        margin-left: 0;
+        margin-right: 15%;
+        margin-bottom: 15px;
+        height: 50px;
+        font-size: large;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 10px;
+        font-weight: 200;
+    }
+}
+
+
+@media (min-width: 574px) {
+    .logingrid{
+        box-shadow: 10px 10px 10px rgba(0, 100, 0, 0.5);
+        margin: 10% 10% 10% 10%;
+        min-height: fit-content;
+        justify-content: left;
+        border-radius: 20px;
+        padding: 10% 10% 10% 10%;
+        background: whitesmoke;
+    }
+    .logingrid .logincontainer{
+        justify-self: left;
+        padding-left: 5%;
+    }
+    a,
+    img,
+    h1{
+        padding: 0 3% 0 3%;
+    }
+    .idrow h2,
+    .idrow h3,
+    .idrow .ids,
+    .idrow .idsa:link,
+    .idrow .idsa:visited,
+    .idrow .idsa:active{
+        text-align: left;
+        padding: 0 0 0 3%;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 50px;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 10px;
+        font-weight: 200;
+    }
+
+    .idrow .ids,
+    .idrow .idsa:link,
+    .idrow .idsa:visited,
+    .idrow .idsa:active{
+        padding: 0 0 0 15%;
+    }
+    .logingrid .logincontainer .idrow .login{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 15%;
+        margin-bottom: 15px;
+        height: 50px;
+        font-size: large;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 10px;
+        font-weight: 200;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logingrid{
+        box-shadow: 10px 10px 10px rgba(0, 100, 0, 0.5);
+        margin: 10% 20% 10% 20%;
+        min-height: fit-content;
+        justify-content: left;
+        border-radius: 20px;
+        padding: 10% 10% 10% 10%;
+        background: whitesmoke;
+    }
+    .logingrid .logincontainer{
+        justify-self: left;
+        padding-left: 5%;
+    }
+    a,
+    img,
+    h1{
+        padding: 0 3% 0 3%;
+    }
+    .idrow h2,
+    .idrow h3,
+    .idrow .ids,
+    .idrow .idsa:link,
+    .idrow .idsa:visited,
+    .idrow .idsa:active{
+        text-align: left;
+        padding: 0 0 0 3%;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 50px;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 10px;
+        font-weight: 200;
+    }
+
+    .idrow .ids,
+    .idrow .idsa:link,
+    .idrow .idsa:visited,
+    .idrow .idsa:active{
+        padding: 0 0 0 15%;
+    }
+    .logingrid .logincontainer .idrow .login{
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 15px;
+        height: 50px;
+        font-size: large;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 10px;
+        font-weight: 200;
+    }
+}
+
+
+.idrow h2,
+.idrow h3{
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1200 - 320)));
+    color: #145a32;
+    font-family: 'Montserrat', sens-serif;
+}
+
+.idrow .ids,
+.idrow .idsa:link,
+.idrow .idsa:visited,
+.idrow .idsa:active{
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1200 - 320)));
+    word-wrap: break-word;
+    color: #ce8a00;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.idrow .idsa:hover{
+    text-shadow: #6c4800 3px 3px 3px;
+    transition: 1s;
+    color: #ffb520;
+}
+
