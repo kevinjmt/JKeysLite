@@ -2,6 +2,7 @@
 Your new Password Manager, private, self-hosted on your computer
 ___
 
+- 🐈‍⬛ > https://github.com/kevinjmt/JKeysLite
 - 🌐 > COMING SOON
 - ⬇️ > COMING SOON
 - 📦 > COMING SOON
