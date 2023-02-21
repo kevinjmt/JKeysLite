@@ -2,6 +2,27 @@ body{
     background: linear-gradient(90deg, #ffa60078 ,  #0ea04678 );
 }
 
+.deletebutton{
+    transition: 0.5s;
+    margin-top: 100px;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    color: brown;
+    border: 0;
+    padding: 0;
+    background: none;
+}
+.deletebutton:hover{
+    transition: 0.5s;
+    color: indianred;
+    margin-top: 100px;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    padding: 0;
+    background: none;
+}
+
 .logingrid{
     box-shadow: 10px 10px 10px rgba(0, 100, 0, 0.5);
     justify-content: center;
