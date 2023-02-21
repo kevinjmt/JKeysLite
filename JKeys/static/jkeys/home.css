@@ -2,17 +2,22 @@ body{
     background: linear-gradient(90deg, #ffa60078 ,  #0ea04678 );
 }
 
-.logingrid .logincontainer .createbutton a{
-    margin: 25px;
-    color: forestgreen;
-
+.logingrid .logincontainer .createbutton{
+    margin: 50px;
 }
+
+.logingrid .logincontainer .createbutton a{
+    transition: 0.5s;
+    color: forestgreen;
+}
+
 .logingrid .logincontainer .createbutton a:hover{
-    margin: 25px;
+    transition: 0.5s;
     color: darkseagreen;
 }
 
 .logingrid .logincontainer .linkbutton {
+    transition: 0.5s;
     margin-bottom: 10px;
     margin-top: 10px;
     color: #a26c00;
